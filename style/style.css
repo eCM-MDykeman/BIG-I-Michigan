@@ -1567,3 +1567,47 @@ span.label.label-admin {
 .community-landing-page .bg-light-grey .col-md-12 .Content .pagination {
     margin: 8px -10px 0;
 }
+
+.community-landing-page .HLLandingControl.HLDiscussions ul {
+    background: #FFFFFF;
+    border: 1px solid #F2F6F7;
+    padding: 25px 29px;
+    border-radius: 3px;
+}
+
+.community-landing-page .HLLandingControl.HLDiscussions ul li {
+    border: none;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.community-landing-page .HLLandingControl.HLDiscussions ul li .title-row .col-sm-2.col-md-2 {
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+.community-landing-page .HLLandingControl.HLDiscussions ul li .title-row .col-sm-10.col-md-10 {
+    padding: 0;
+    width: 100%;
+}
+.community-landing-page .nav-tabs>li>a {
+    margin-top: 21.5px;
+    margin-bottom: 21.5px
+}
+
+.community-landing-page .nav-tabs>li:nth-child(2)>a {
+    margin-left: 14px
+}
+
+.community-landing-page .HLLandingControl.HLAnnouncements ul li {
+    padding: 26px 37px;
+        background: #24292C;
+border-radius: 3px;
+    border: none;
+}
+
+.community-landing-page .HLLandingControl.HLAnnouncements ul li * {
+    color: #fff;
+}
