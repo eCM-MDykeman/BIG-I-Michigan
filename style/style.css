@@ -410,11 +410,11 @@ body p {
 	margin-bottom: 0px;
 }
 
-ul.nav li {
+#NAV ul.nav li {
 	margin-top: 8px;
 }
 
-ul.nav li a {
+#NAV ul.nav li a {
 	position: relative;
 	padding-top: 12px;
 	padding-bottom: 10px;
