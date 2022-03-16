@@ -1237,6 +1237,7 @@ a[id*="LinkToCalendar"]:hover {
 .tabbed-content .SearchResults.HLLandingControl ul li div[id*="pnlProfPic"] a img {
 	height: 40px;
 	width: 40px;
+	border-radius: 50%;
 }
 
 .tabbed-content .ByLine, .tabbed-content h5 {
@@ -1245,15 +1246,41 @@ a[id*="LinkToCalendar"]:hover {
 }
 
 .tabbed-content .ByLine {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 20px;
 	color: #4F5266;
 }
 
+.tabbed-content .ByLine a {
+	color: #202A5A;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 20px;
+	position: relative;
+}
+
+.tabbed-content .ByLine a::after {
+	content: '';
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #3AC0F0;
+}
+
+.tabbed-content .ByLine a:hover::after, .tabbed-content .ByLine a:focus::after {
+	content: none;
+}
+
+
 .tabbed-content h5 a {
 	padding: 5px 10px;
 	border: 2px solid #3AC0F0;
+	color: #202A5A;
 	box-sizing: border-box;
 	border-radius: 3px;
 	letter-spacing: 1px;
@@ -1261,6 +1288,13 @@ a[id*="LinkToCalendar"]:hover {
 	font-weight: 700;
 	font-size: 9px;
 	line-height: 11px;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+
+.tabbed-content h5 a:hover, .tabbed-content h5 a:focus {
+	background-color: #3AC0F0;
 }
 
 .tabbed-content .SearchResults.HLLandingControl ul li .byline-wrap,
