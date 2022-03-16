@@ -1027,11 +1027,10 @@ a, a:hover, a:focus {
 }
 
 .tabbed-content>.row-groups>.container {
-    background: #FFFFFF;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    padding: 0px;
-    min-height: 916px;
+	border: 1px solid #F2F6F7;
+	box-sizing: border-box;
+	border-radius: 3px;
+    min-height: 972px;
 }
 
 .tabbed-content {
@@ -1050,16 +1049,11 @@ a, a:hover, a:focus {
 }
 
 .tabbed-content .nav-tabs li a {
-    padding-top: 0;
-    border-color: transparent;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 20px;
-    color: #1E2024;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #202A5A;
 }
 
 .tabbed-content .nav-tabs>li.active>a,
@@ -1069,8 +1063,8 @@ a, a:hover, a:focus {
 .tabbed-content .nav>li>a:focus {
     border-color: transparent;
     background-color: transparent;
-    color: #2D2926;
-    border-bottom: 3px solid #FF661C;
+    font-weight: 700;
+    border-bottom: 3px solid #3AC0F0;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
 }
