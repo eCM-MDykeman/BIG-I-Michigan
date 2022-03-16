@@ -1393,6 +1393,11 @@ a[id*="LinkToCalendar"]:hover {
 	background: #F2F6F7;
 }
 
+.community-landing-page .bg-white {
+    background: #fff;
+	padding: 32px calc(50% - 615px) 69px;
+}
+
 #PageTitleH1 {
 	max-width: 100%;
 	padding: 41px calc(50% - 585px) 69px;
@@ -1477,6 +1482,10 @@ a[id*="LinkToCalendar"]:hover {
 }
 
 .community-landing-page .bg-light-grey {
+	padding: 44px 64px;
+}
+
+.community-landing-page .bg-light-grey.members {
 	padding: 44px 64px;
 	position: relative;
 	margin-bottom: -70px;
