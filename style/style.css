@@ -1122,7 +1122,7 @@ a[id*="LinkToCalendar"]:hover {
 	border-top-color: transparent;
 	border-left-color: transparent;
 	border-right-color: transparent;
-	padding: 18px 37px 0 37px;
+	padding: 18px 21px 0 21px;
 }
 
 .tabbed-content .nav-tabs li a {
@@ -1133,6 +1133,7 @@ a[id*="LinkToCalendar"]:hover {
 	color: #202A5A;
 	padding: 0 3px 4px 3px;
 	margin-bottom: 11px;
+	margin: 0 16px;
 }
 
 .tabbed-content .nav-tabs>li.active>a,
