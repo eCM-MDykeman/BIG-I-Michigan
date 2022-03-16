@@ -1389,6 +1389,10 @@ a[id*="LinkToCalendar"]:hover {
 
 /* CLP */
 
+#MainCopy_ContentWrapper.community-landing-page {
+	background: #F2F6F7;
+}
+
 #PageTitleH1 {
 	max-width: 100%;
 	padding: 41px calc(50% - 585px) 69px;
@@ -1474,13 +1478,12 @@ a[id*="LinkToCalendar"]:hover {
 
 .community-landing-page .bg-light-grey {
 	padding: 44px 64px;
-	background: #F2F6F7;
 	position: relative;
 	margin-bottom: -70px;
 	overflow: hidden;
 }
 
-.community-landing-page .bg-light-grey::before {
+.community-landing-page .bg-light-grey.members::before {
     font-family: "Font Awesome 5 Pro";
     content: "\f0c0";
     position: absolute;
