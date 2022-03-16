@@ -1487,3 +1487,13 @@ span.label.label-admin {
 .community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"] .row:not(:first-child) {
 	margin: 0 -5px
 }
+
+@media (min-width: 1024px) {
+	.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"] .panel-default {
+		position: relative;
+	}
+	.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"] .panel-title {
+		position: absolute;
+		top: 50px;
+	}
+}
