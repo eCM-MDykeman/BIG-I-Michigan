@@ -1412,16 +1412,16 @@ a[id*="LinkToCalendar"]:hover {
 }
 
 .community-landing-page .bg-light-grey::before {
-	font-family: "Font Awesome 5 Pro";
-	content: "\f0c0";
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 250px;
-	line-height: 250px;
-	color: #E5E9EB;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f0c0";
+    position: absolute;
+    right: -50px;
+    bottom: -40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 250px;
+    line-height: 250px;
+    color: #E5E9EB;
 }
 
 .community-landing-page .bg-light-grey .col-md-12 .Content {
@@ -1494,6 +1494,41 @@ span.label.label-admin {
 	}
 	.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"] .panel-title {
 		position: absolute;
-		top: 50px;
+		top: 45px;
 	}
+}
+
+.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"] .form-control {
+    font-family: 'Open Sans';
+    background: #FFFFFF;
+    border: 1px solid #E5E9EB;
+    box-shadow: none;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #24292C;
+    padding: 8px;
+    height: 100%;
+    appearance: none;
+}
+
+.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"]>.row:first-child > div:nth-child(n+3) {
+    position:relative
+}
+
+.community-landing-page .bg-light-grey .col-md-12 .Content div[id*="UpdatePanel"]>.row:first-child > div:nth-child(n+3)::after {
+    font-family: "Font Awesome 5 Pro";
+    content: '\f107';
+    color: #24292C;
+    z-index: 1;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.community-landing-page .bg-light-grey .col-md-12 .Content .pagination {
+    margin: 8px -10px 0;
 }
