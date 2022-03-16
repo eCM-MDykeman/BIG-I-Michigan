@@ -1405,10 +1405,11 @@ a[id*="LinkToCalendar"]:hover {
 }
 
 .community-landing-page .bg-light-grey {
-	padding: 64px;
+	padding: 44px 64px;
 	background: #F2F6F7;
 	position: relative;
-	margin-bottom: -70px
+	margin-bottom: -70px;
+	overflow: hidden;
 }
 
 .community-landing-page .bg-light-grey::before {
