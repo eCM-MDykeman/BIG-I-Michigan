@@ -135,17 +135,69 @@ function handlemapSection() {
     $('.map-bg').append($('.top-left-img, .bottom-img, .top-right-img'));
 
     $('.map-bg').removeClass('map-bg').closest('.col-md-8').addClass('map-bg');
+
+    $('.map-bg').append('<div class="light-grey-circle"/>');
+    $('.map-bg').append('<div class="grey-outline-circle"/>');
+    $('.map-bg').append('<div class="dark-blue-circle-72"/>');
+    $('.map-bg').append('<div class="dark-blue-circle-49"/>');
+    $('.map-bg').append('<div class="dark-blue-circle-72-second"/>');
 }
 
+function handleHero() {
+    var heroMapBGImg = $('.hero-map img');
 
+    var heroMapBGImgSrc = $(heroMapBGImg).attr('src');
 
+    $('.hero-map').css('background-image', 'url("' + heroMapBGImgSrc + '")');
+
+    $(heroMapBGImg).hide();
+
+    var heroIconBGImg = $('.hero-icon img');
+
+    var heroIconBGImgSrc = $(heroIconBGImg).attr('src');
+
+    $('.hero-icon').css('background-image', 'url("' + heroIconBGImgSrc + '")');
+
+    $(heroMapBGImg).hide();
+
+}
+
+function handleLoggedIn() {
+    if ($('.HLWelcome .imgButton').length) {
+        $('body').addClass('logged-in');
+    }
+}
+
+function handleTopTile() {
+    $('.top-tile').wrapAll('<div class="top-tile-wrapper"></div>');
+
+    $('.top-tile').each(function () {
+        var href = $(this).find('a').attr('href');
+        var anchorText = $(this).find('a').text();
+        $(this).wrap('<a class="top-tile-wrap" href="' + href + '"></a>');
+        $(this).find('a').replaceWith('<span>' + anchorText + '</span>');
+    });
+}
 
 $(function () {
+
+    handleHero();
+
+    $(window).scroll(function () {
+        var value = window.scrollY;
+
+        $('.hero-map').css('top', (value - 71) / 2 + 'px');
+
+        $('.hero-icon').css('top', -(value + 50) / 4 + 'px');
+    });
+
 
     handleDiscussionPosts();
     handleTileLinks();
     handleSliders();
     handleAdSpace();
     handlemapSection();
+    handleLoggedIn();
+    handleTopTile();
 
 });
