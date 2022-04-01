@@ -1,19 +1,15 @@
-
-
 function handleDiscussionPosts() {
-    $('.tabs .HLDiscussions ul li').each(function () {
+    $('.HLDiscussions ul li').each(function () {
         var byline = $(this).find('.ByLine');
-        var postedIn = $(this).find('h5[id*="DiscussionList"]');
-        var description = $(this).find('p[id*="DiscussionList"]');
-        var col10 = $(this).find('.title-row > .col-sm-10.col-md-10');
-        $(col10).append($(description));
-        $(col10).append($(byline));
-        $(col10).append($(postedIn));
+        var postedIn = $(this).find('.content-row');
+        var description = $(this).find('p[id*="DiscussionList"]').parent();
+        $(description).append($(byline));
+        $(description).append($(postedIn));
     });
 
     $('.tabs .SearchResults.HLLandingControl ul li').each(function () {
         var byline = $(this).find('.ByLine');
-        var postedIn = $(this).find('h5');
+        var postedIn = $(this).find('div[id*="pnlFoundIn"]');
         var description = $(this).find('div[id*="pnlDescription"]');
         $(description).append($(byline));
         $(description).append($(postedIn));
@@ -92,18 +88,34 @@ function handleSliders() {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 5
                 }
             },
             {
-                breakpoint: 991,
+                breakpoint: 1022,
+                settings: {
+                    slidesToShow: 4,
+                    centerPadding: '0px'
+                }
+            },
+            {
+                breakpoint: 830,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: false,
+                    centerPadding: '0px'
+                }
+            },
+            {
+                breakpoint: 599,
                 settings: {
                     slidesToShow: 2,
-                    centerPadding: '65px'
+                    centerMode: false,
+                    centerPadding: '0px'
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
                     centerMode: false,
@@ -179,6 +191,17 @@ function handleTopTile() {
     });
 }
 
+function handlePartnerBox() {
+
+    $('.partner-box').each(function () {
+        var href = $(this).find('a').attr('href');
+        var partnerText = $(this).find('a').text();
+        $(this).wrap('<a class="partner-box-wrap" href="' + href + '"></a>');
+        $(this).find('a').replaceWith('<span>' + partnerText + '</span>');
+    });
+
+}
+
 $(function () {
 
     handleHero();
@@ -191,8 +214,8 @@ $(function () {
         $('.hero-icon').css('top', -(value + 50) / 4 + 'px');
     });
 
-
     handleDiscussionPosts();
+    handlePartnerBox();
     handleTileLinks();
     handleSliders();
     handleAdSpace();
@@ -200,4 +223,14 @@ $(function () {
     handleLoggedIn();
     handleTopTile();
 
+});
+
+$(function () {
+    $('.HLLandingControl.HLEventList ul li').each(function () {
+        var self = $(this),
+            month = $(self).find('.date-block .calendar-month span').text();
+
+        month = month.substring(0, 3);
+        $(self).find('.date-block .calendar-month').text(month);
+    });
 });

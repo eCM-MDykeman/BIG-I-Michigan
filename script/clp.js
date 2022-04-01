@@ -1,22 +1,10 @@
 $(function () {
-    handleDiscussions();
+    handleCommunityTabs();
 });
 
-function handleDiscussions() {
-    $(".community-landing-page .HLLandingControl.HLDiscussions ul li").each(
-        function () {
-            var byline = $(this).find(".ByLine");
-            var communityName = $(this).find("h5");
+function handleCommunityTabs() {
 
-            $(byline).appendTo(this);
-            $(communityName).appendTo(this);
+    $('#CommunityTabsContainer').removeClass('nav-tabs').addClass('nav-pills');
 
-            $(communityName)
-                .contents()
-                .filter(function () {
-                    return this.nodeType === 3;
-                })
-                .remove();
-        }
-    );
+    $('#CommunityTabsContainer').wrap('<div class="community-nav-wrapper"></div>');
 }
