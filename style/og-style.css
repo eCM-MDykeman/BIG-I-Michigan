@@ -2771,14 +2771,13 @@ span.label.label-admin {
     position: relative;
 }
 
-
 .ad-space .HtmlContent p {
 	margin: 0;
 }
 
 /* Partner Slider */
 
-.partner-slider .partner-slide {
+.partner-slider .partner-slide, .partner-box {
 	width: 200px;
 	height: 150px;
 	border: 3px solid #F2F6F7;
@@ -2787,6 +2786,34 @@ span.label.label-admin {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0 auto;
+	color: #202A5A;
+}
+
+.partner-slider .partner-slide:hover, .partner-slider .partner-slide:focus, .partner-box:hover, .partner-box:focus {
+	border-color: #BAE9FA;
+	color: #3AC0F0;
+}
+
+.partner-box { 
+	display: inline-flex;
+	font-family: Quicksand;
+	font-weight: 700;
+	font-size: 24px;
+ }
+
+ .partner-box-wrap {
+	 margin: 20px;
+	 display: inline-block;
+	 text-decoration: none;
+ }
+
+.partner-box-wrap:first-of-type {
+	margin-left: 0;
+}
+
+.partner-box-wrap:last-of-type {
+	margin-right: 0;
 }
 
 .partner-slider .partner-slide img {
@@ -3758,6 +3785,15 @@ span.label.label-admin {
    .navbar-nav .open .dropdown-menu .dropdown-header {
 	   padding: 5px 15px 5px 25px;
    }
+
+   
+	.partner-box-wrap:first-of-type {
+		margin-left: 20px;
+	}
+
+	.partner-box-wrap:last-of-type {
+		margin-right: 20px;
+	}
 
 }
 
