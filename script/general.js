@@ -29,10 +29,17 @@ function handleTileLinks() {
     });
 
     $('.benefit-tile').each(function () {
-        var anchor = $(this).find('a');
-        var anchorHref = $(anchor).attr('href');
-        $(this).wrap('<a class="benefit-tile-anchor" href="' + anchorHref + '"></a>');
-        $(anchor).hide();
+        if ($(this).find('a').length) {
+            var anchor = $(this).find('a');
+            var anchorHref = $(anchor).attr('href');
+            $(this).wrap('<a class="benefit-tile-anchor" href="' + anchorHref + '"></a>');
+            $(anchor).hide();
+        }
+        // }
+        // var anchor = $(this).find('a');
+        // var anchorHref = $(anchor).attr('href');
+        // $(this).wrap('<a class="benefit-tile-anchor" href="' + anchorHref + '"></a>');
+        // $(anchor).hide();
     });
 }
 
