@@ -77,7 +77,6 @@ function handleSliders() {
         var href = $(this).find('a').attr('href');
 
         if ($(this).hasClass('gold')) {
-            console.log('has gold class');
             $(this).wrap('<div class="partner-slide-anchor-wrap"/>');
         }
         else {
