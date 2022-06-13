@@ -2001,6 +2001,10 @@ body:not(.logged-in) .top-tile-wrapper {
 	margin-bottom: 0px !important;
 }
 
+.interior.community-page #PageTitleH1 {
+	padding: 20px calc(50% - 585px) 50px;
+}
+
 #MainCopy_ContentWrapper {
 	margin-bottom: 70px;
 }
