@@ -254,6 +254,8 @@ body p {
 #MPheader>div#Logo {
 	padding: 23px 0 24px calc(50% - 688px);
 	margin: 0;
+	position: relative;
+	z-index: 5;
 }
 
 #MPheader>.row:first-child {
@@ -3015,6 +3017,15 @@ span.label.label-admin {
 
 .partner-slider .partner-slide img {
 	width: 100%;
+}
+
+.partner-slider .partner-slide.gold {
+	cursor: default;
+}
+
+.partner-slider .partner-slide.gold a {
+	color: #3AC0F0;
+	text-decoration: underline;
 }
 
 /* Member Dashboard */

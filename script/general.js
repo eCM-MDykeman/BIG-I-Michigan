@@ -75,8 +75,16 @@ function handleSliders() {
 
     $('.partner-slide').each(function () {
         var href = $(this).find('a').attr('href');
-        $(this).find('a').hide();
-        $(this).wrap('<a class="partner-slide-anchor-wrap" href="' + href + '"/>');
+
+        if ($(this).hasClass('gold')) {
+            console.log('has gold class');
+            $(this).wrap('<div class="partner-slide-anchor-wrap"/>');
+        }
+        else {
+            $(this).find('a').hide();
+            $(this).wrap('<a class="partner-slide-anchor-wrap" href="' + href + '"/>');
+        }
+
     });
 
     $('.partner-slider').slick({
