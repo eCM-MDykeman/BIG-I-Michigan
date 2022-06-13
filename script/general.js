@@ -20,7 +20,7 @@ function handleTileLinks() {
     $('.tile').each(function () {
         var anchor = $(this).find('a');
         var anchorHref = $(anchor).attr('href');
-        $(this).wrap('<a class="tile-anchor" href="' + anchorHref + '"></a>');
+        $(this).wrap('<a class="tile-anchor" target="_blank" href="' + anchorHref + '"></a>');
         $(anchor).hide();
         var BGImg = $(this).find('img');
         var BGImgSrc = $(BGImg).attr('src');

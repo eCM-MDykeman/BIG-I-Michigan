@@ -1,0 +1,52 @@
+/* CIC white logo on hero background */
+.hero-cic {
+
+    padding-top: 20px;
+    padding-right: calc(50% - 570px);
+    padding-bottom: 30px;
+    padding-left: calc(50% - 570px);
+    background: linear-gradient(90deg, #202A5A 26.28%, rgba(32, 42, 90, 0.1) 99.13%), #2986A8;
+    position: relative;
+}
+
+
+
+.white-background-with-shadow {
+    background: #fff;
+    box-shadow: 0px 10px 30px rgba(4, 19, 41, 0.06), 0px 4px 10px rgba(4, 19, 41, 0.04);
+    position: relative;
+    z-index: 6;
+}
+
+.box-padding {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+/* margin outside of box */
+
+.box-outside-margin {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.large-box-padding {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+/* add border to content item */
+.border-box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3AC0f0;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
