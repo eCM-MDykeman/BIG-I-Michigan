@@ -2681,6 +2681,19 @@ span.label.label-admin {
 	text-decoration: none;
 }
 
+.benefit-tile-anchor[href*="mailto:"] {
+	color: #515765;
+}
+
+.benefit-tile-anchor[href*="mailto:"]::before,
+.benefit-tile-anchor[href*="mailto:"] .HtmlContent>a::before {
+	display: none;
+}
+
+.benefit-tile-anchor[href*="mailto:"] .HtmlContent>a {
+	display: inline-block !important;
+}
+
 .benefit-tile .HtmlContent {
 	background: #FFFFFF;
 	box-shadow: 0px 10px 30px rgb(4 19 41 / 6%), 0px 4px 10px rgb(4 19 41 / 4%);
